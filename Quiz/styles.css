@@ -1,0 +1,232 @@
+/* CSS Variables for easier theme management */
+:root {
+  --bg-color: #f5f6f7;
+  --text-color: #1b1b32;
+  --primary-color: #1b1b32;
+  --secondary-color: #f1be32;
+  --highlight-color: #dfdfe2;
+  --logo-bg-color: #0a0a23;
+  --button-bg-color: #d0d0d5;
+  --button-border-color: #3b3b4f;
+  --footer-bg-color: #2a2a40;
+  --footer-text-color: #dfdfe2;
+  --font-family-primary: Helvetica, Arial, sans-serif;
+  --font-family-secondary: Verdana, Tahoma, sans-serif;
+}
+
+/* Smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family-primary);
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Ensure header stays above other content */
+}
+
+#logo {
+  width: max(100px, 18vw);
+  background-color: var(--logo-bg-color);
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-size: min(5vw, 1.2em);
+  text-align: center;
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  list-style: none;
+}
+
+nav > ul > li {
+  color: var(--highlight-color);
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 60px; /* Adjusted for fixed header */
+}
+
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+
+h1,
+h2 {
+  font-family: var(--font-family-secondary);
+}
+
+h2 {
+  border-bottom: 4px solid var(--highlight-color);
+  margin-top: 0px;
+  padding-top: 60px;
+}
+
+.info {
+  padding: 10px 0 0 5px;
+}
+
+.formrow {
+  margin-top: 30px;
+  padding: 0px 15px;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.info label,
+.info input {
+  display: inline-block;
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
+}
+
+.info label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+p {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 1.25rem;
+}
+
+p::before {
+  content: "Question #";
+}
+
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 1.5rem;
+  background: var(--button-bg-color);
+  border: 3px solid var(--button-border-color);
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  display: flex;
+  justify-content: center;
+}
+
+footer,
+footer a {
+  color: var(--footer-text-color);
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav > ul {
+    justify-content: space-between;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  button {
+    width: 70%;
+  }
+}
