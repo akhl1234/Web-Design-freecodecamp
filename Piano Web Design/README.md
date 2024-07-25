@@ -17,8 +17,8 @@ This project showcases a web design for a piano using HTML and CSS. The design d
 
 ### Screenshots
 
-![Full Width](Piano%20Web%20Design/screenshot/full-width.png)
-![Resized View](Piano%20Web%20Design/screenshot/resize.png)
+![Full Width](screenshot/full-width.png)
+![Resized View](screenshot/resize.png)
 
 
 ### How to Run the Project
