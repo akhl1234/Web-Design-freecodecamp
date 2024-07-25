@@ -8,7 +8,6 @@ This project demonstrates the CSS Box Model by creating a Rothko-style painting.
 
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
