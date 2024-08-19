@@ -2,6 +2,11 @@
 
 This project is part of the **freeCodeCamp Responsive Web Design** curriculum, specifically the "Learn CSS Grid by Building a Magazine" module. The purpose of this project is to demonstrate the power and flexibility of **CSS Grid** in creating a fully responsive magazine layout. The project consists of HTML and CSS files, showcasing how to structure a webpage using grid rows and columns effectively.
 
+## Screenshot
+
+![Magazine Layout Screenshot-1](Magazine-Layout/screenshot-1.png)
+![Magazine Layout Screenshot-2](Magazine-Layout/screenshot-2.png)
+
 ## Project Overview
 
 The magazine layout project was built to understand and implement various CSS Grid concepts. The design is clean, modern, and responsive, making it adaptable to different screen sizes. Through this project, I explored the following key aspects of CSS Grid:
@@ -26,3 +31,7 @@ Web-Design-freecodecamp/
 └── Magazine-Layout/
     ├── index.html      # The main HTML file for the magazine layout
     └── styles.css      # The CSS file containing all the styles
+
+
+
+```
