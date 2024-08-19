@@ -4,8 +4,8 @@ This project is part of the **freeCodeCamp Responsive Web Design** curriculum, s
 
 ## Screenshot
 
-![Magazine Layout Screenshot-1](Magazine-Layout/screenshot-1.png)
-![Magazine Layout Screenshot-2](Magazine-Layout/screenshot-2.png)
+![screenshot-1](screenshot-1.png)
+![screenshot-2](screenshot-2.png)
 
 ## Project Overview
 
